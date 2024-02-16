@@ -16,6 +16,9 @@ h1,h2,h3,h4,h5,h6{
 h1{
     font-size: 96px;
     line-height: 1.5;
+   
+
+    
 }
 
 p{
@@ -24,18 +27,24 @@ p{
     font-size: 18px;
     line-height: 30px;
 }
+img{
+    border-radius: 4px;
+}
 
 .hero{
-    background: var(--primary-color);
+    background: url(images/pexels-ron-lach-copy.jpg) no-repeat center;
     text-align: center;
     padding: 160px 20px;
 }
 
 .hero p{
-    font-size: 36px;
+    font-size: 50px;
     font-weight: bold;
-    margin: 0;
-    color: var(--primary-font-color);
+    margin-bottom: -25px;
+   margin-left: 8.8%;
+    color: #F9F7FE;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.192);
 }
 
 .hero h2{
@@ -60,14 +69,20 @@ p{
 }
 
 .btn-branding{
-    background: var(--secondary-color);
+    background: var(--primary-font-color);
     color: white;
     border-radius: 4px;
     font-size: 18px;
     line-height: 27px;
     padding: 15px 30px;
-
+    box-shadow:  0px 5px 5px rgba(0, 0, 0, 0.192);
 }
+.btn-branding:hover{
+    background: var(--primary-color);
+    color: var(--primary-font-color);
+    border: 1px solid var(--primary-font-color);
+}
+
 .btn-branding-outline{
     background: white;
     color: var(--secondary-color);
