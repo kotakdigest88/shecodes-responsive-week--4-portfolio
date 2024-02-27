@@ -86,6 +86,9 @@ li{
     list-style: none;
     margin: 10px 10px;
 }
+li .active{
+    color: var(--secondary-color);
+}
 ul{
     
     margin: 10px;
@@ -95,7 +98,7 @@ nav a{
     text-decoration: none;
     color: var(--primary-font-color);
 }
-nav a:hover, nav a:active li{
+nav a:hover, nav a .active li{
     color: var(--secondary-color);
 }
 
@@ -120,6 +123,7 @@ nav a:hover, nav a:active li{
     background: var(--primary-color);
     color: var(--primary-font-color);
     border: 1px solid var(--primary-font-color);
+    transition: all 100ms ease-in-out;
 }
 
 .btn-branding-outline{
@@ -140,8 +144,6 @@ footer .contact-box{
     background: var(--primary-color);
     padding: 30px;
     border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
 }
 footer .email-link a{
     text-decoration: none;
@@ -150,6 +152,7 @@ footer .email-link a{
 }
 footer .email-link a:hover{
     color: var(--secondary-color);
+    transition: all 100ms ease-in-out;
 }
 footer .social-links a{
     margin: 0 20px;
@@ -162,6 +165,10 @@ footer .social-links a{
 footer .social-links a:hover{
     background: var(--secondary-color);
     color: var(--primary-color);
+    transition: all 100ms ease-in-out;
+}
+footer .coder{
+    font-size: 10px;
 }
 
 @media (max-width: 900px){
